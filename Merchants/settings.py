@@ -37,6 +37,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #third-party
+    'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
+
+    #local
+    'authentication',
+    'products',
+    'webhooks'
 ]
 
 MIDDLEWARE = [
@@ -50,7 +64,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Merchants.urls'
-
+SITE_ID = 1
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
